@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<!--Importing fonts, JQuery library, Tone.js library-->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Fjalla+One|PT+Sans|Raleway|Roboto|Sansita|Pacifico" rel="stylesheet">
+    <link href="simon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Tone.js"></script>
+    <script src="simon.js"></script>
+</head>
+
+<body>
+    <div class="init">
+        <p class="inittext title">Welcome to Simon</p>
+        <p class="inittext body">Simon is a simple game where a random pattern is created and the player must reproduce the pattern from memory. Each level gets successively more difficult as the pattern becomes larger.</p>
+        <div class="initframe">
+            <button class="start clickbypass" style="background-color: grey; border-color:#5f5f5f;">Start</button>
+        </div>
+        <p class="inittext credits">By Bobby Horth</p>
+    </div>
+    <div class="main">
+        <div class="Buttons">
+            <div class="text">
+                <p id="level"></p>
+            </div>
+            <div class="text">
+                <p id="feedback"></p>
+            </div>
+            <div class="top">
+                <div class="box">
+                    <div class="topbox">
+                        <div class="ball redborder"></div>
+                    </div>
+                    <div class="bottombox">
+                        <button class="button1" style="background-color: #d3343c; border-color:#9e272d;">Red</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="topbox">
+                        <div class="ball greenborder"></div>
+                    </div>
+                    <div class="bottombox">
+                        <button class="button2" style="background-color: #4CAF50;border-color:#058a05;">Green</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="topbox">
+                        <div class="ball yellowborder"></div>
+                    </div>
+                    <div class="bottombox">
+                        <button class="button3" style="background-color: #ddcb3e; border-color:#988c2a;">Yellow</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="topbox">
+                        <div class="ball blueborder"></div>
+                    </div>
+                    <div class="bottombox">
+                        <button class="button4" style="background-color: #3196d6; border-color:#246187;">Blue</button>
+                    </div>
+                </div>
+            </div>
+            <div class="play">
+                <button class="reset clickbypass" style="background-color: grey; border-color:#656565;">Replay</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
